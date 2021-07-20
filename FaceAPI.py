@@ -83,7 +83,7 @@ class FaceAPI:
 
 
 if __name__ == "__main__":
-    _img_src = "img.jpg"
+    _img_src = "sample.jpg"
     api = FaceAPI(img_src=_img_src)
     img = api.face_detect()
     img.show()
