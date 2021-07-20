@@ -6,6 +6,7 @@ st.title("顔認識アプリ")
 
 uploaded_file = st.file_uploader("Choose an image...", type="jpg")
 
+# 顔検出した画像を表示
 if uploaded_file is not None:
     api = FaceAPI(img_src=uploaded_file)
     img = api.face_detect()
