@@ -60,21 +60,21 @@ class FaceAPI:
 
             # 関数呼び出し(性別)
             gender_top_left = (image_left, image_top - 310)
-            font = ImageFont.truetype("/System/Library/Fonts/Arial Unicode.ttf", 100)
+            font = ImageFont.truetype("Helvetica", 100)
             align = "Left"
             fill = "Yellow"
             self.draw_info(self.drawing, gender_top_left, image_gender, align, font, fill)
 
             # 関数呼び出し(年齢)
             age_top_left = (image_left, image_top - 220)
-            font = ImageFont.truetype("/System/Library/Fonts/Arial Unicode.ttf", 100)
+            font = ImageFont.truetype("Helvetica", 100)
             align = "Left"
             fill = "Yellow"
             self.draw_info(self.drawing, age_top_left, str(image_age), align, font, fill)
 
             # 関数呼び出し(感情)
             emotion_top_left = (image_left, image_top - 130)
-            font = ImageFont.truetype("/System/Library/Fonts/Arial Unicode.ttf", 100)
+            font = ImageFont.truetype("Helvetica", 100)
             align = "Left"
             fill = "Yellow"
             self.draw_info(self.drawing, emotion_top_left, image_emotion, align, font, fill)
